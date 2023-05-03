@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WINE LIST</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body class="bg-gray-500 font-serif">
+    <div class="flex flex-col item-center text-center max-w-3xl bg-gray-200 mx-auto">
+        <div class="w-full px-12">
+            <h1 class="text-6xl my-10">- WINE LIST -</h1>
+
+            <div class="flex flex-col text-left mb-10 gap-3">
+                <label for="inputText" class="text-2xl mb-2">【CHOOSE WINE】</label>
+                <div><input type="radio" name="wine-type" value="reds" checked> RED WINE</div>
+                <div><input type="radio" name="wine-type" value="whites"> WHITE WINE</div>
+                <div><input type="radio" name="wine-type" value="sparkling"> SPARKLING</div>
+                <div><input type="radio" name="wine-type" value="dessert"> DESSERT</div>
+                <div><input type="radio" name="wine-type" value="port"> PORT</div>
+            </div>
+
+            <div class="flex flex-col text-left mb-20">
+                <label for="label" class="text-2xl mb-10"></label>
+                <div id="loading" class="flex justify-center"></div>
+                <div id="wine-list" class="flex flex-wrap justify-between"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
